@@ -1,0 +1,82 @@
+<header class="header-parent" [class.scrolled]="scrolled">
+  <div class="container">
+    <div class="header-main">
+      <div class="header-toggle">
+        <a (click)="onHeaderSidebarOpen()">
+          <img src="./assets/images/Mask group.svg" alt="mask" />
+        </a>
+      </div>
+
+      <div class="header-logo">
+        <img src="./assets/images/brands/logo.png" alt="logo" />
+      </div>
+
+      <div class="header-dis">
+        <div class="header-menu">
+          <ul>
+            <li routerLink="/about-us">
+              <a>ABOUT </a>
+            </li>
+
+            <li routerLink="/about-us">
+              <a>EVENTS</a>
+            </li>
+
+            <li routerLink="/gallery">
+              <a>Gallery</a>
+            </li>            
+
+            <li routerLink="/our-products">
+              <a>NEWS</a>
+            </li>
+
+            <li routerLink="/gallery">
+              <a>MEDIA</a>
+            </li>
+
+            <li routerLink="/contact-us">
+              <a>TIMELINE</a>
+            </li>
+
+            <li routerLink="/contact-us">
+              <a>CONTACT</a>
+            </li>
+
+            <li routerLink="/contact-us">
+              <a>GET INVOLVED</a>
+            </li>
+
+            <!-- <li routerLink="/">
+              <a>Home </a>
+            </li>
+
+            <li routerLink="/about-us">
+              <a>About Us</a>
+            </li>
+
+            <li routerLink="/gallery">
+              <a>Gallery</a>
+            </li>            
+
+            <li routerLink="/our-products">
+              <a>Products</a>
+            </li>
+
+            <li routerLink="/our-products">
+              <a>Career</a>
+            </li>
+
+            <li routerLink="/contact-us">
+              <a>Contact Us</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END! header-bottom-main -->
+  </div>
+</header>
+<!-- END! header-bottom -->
+
+<app-header-sidebar #headerSidebar></app-header-sidebar>
+<!-- END! header-sidebar -->

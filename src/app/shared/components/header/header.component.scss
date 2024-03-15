@@ -1,0 +1,231 @@
+@import "src/theme/variables";
+
+/* --- header-parent --- */
+.header-parent {
+  display: flex;
+  // background-color: #ffffff;
+  background: transparent;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 70px;
+  position: relative;
+  z-index: 111;
+  justify-content: center;
+  align-items: center;
+  // padding: 1em 0;
+  position: fixed;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+.header-parent.scrolled {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow when scrolled */
+  background-color: $color-white; // Change background color when scrolled
+  .header-menu {
+    ul {
+      li {
+        a {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .header-parent {
+    padding: 0;
+    background-color: #fff;
+  }
+}
+
+/* --- header-main --- */
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 0 0;
+
+  .header-logo {
+    display: block;
+    max-width: 55px;
+    background-color: 1px solid red;
+    width: 100%;
+    margin-bottom: -5px;
+
+    img {
+      width: 45px;
+      vertical-align: middle;
+      padding-bottom: 5px;
+    }
+  }
+
+  .header-toggle {
+    display: none;
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 1147px) {
+  .header-main {
+    .header-logo {
+      button {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header-main {
+    padding: 3px 0 6px;
+
+    .header-logo {
+      display: block;
+      max-width: 70px;
+      margin-bottom: 0;
+    }
+
+    .header-toggle {
+      min-width: 65px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      padding-top: 2px;
+
+      a {
+        img {
+          max-width: 23px;
+          min-width: 23px;
+          max-height: 23px;
+          min-height: 23px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 556px) {
+  .header-main {
+    .header-logo {
+      max-width: 52px;
+    }
+  }
+}
+
+/* --- header-menu --- */
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 36px;
+    padding-right: 20px;
+
+    li {
+      display: inline-block;
+
+      &:last-child {
+        margin: 0px;
+      }
+
+      a {
+        // color: #000;
+        color: $color-white;
+        font-family: $font-en-primary;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        transition: all 0.3s linear;
+        white-space: nowrap;
+
+        i {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1147px) {
+  .header-menu {
+    ul {
+      gap: 32px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header-menu {
+    ul {
+      gap: 14px;
+
+      li {
+        a {
+          padding: 4px 10px;
+          background-color: #fff;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header-menu {
+    ul {
+      display: none;
+    }
+  }
+}
+
+/* --- header-main-post --- */
+.header-main-post {
+  button {
+    border-radius: 9px;
+    color: #ffffff;
+    background-color: #27919f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 0;
+    outline: 0;
+    transition: all 0.12s linear;
+    padding: 7px 12px;
+    box-shadow: inset 0px 2px 4px #00000063;
+
+    span {
+      font-size: 15px;
+      font-family: $font-en-primary;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header-main-post {
+    padding-top: 2px;
+
+    &.header-main-post-next {
+      display: none;
+    }
+  }
+}

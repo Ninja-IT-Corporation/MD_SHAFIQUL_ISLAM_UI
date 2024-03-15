@@ -1,0 +1,131 @@
+@import "src/theme/variables";
+
+/* --- container-main --- */
+.container-main {
+  width: 100%;
+}
+
+/* --- container-title --- */
+.container-title {
+  h2 {
+    font-family: $font-en-primary;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: $heading-color;
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: $sub-heading-color;
+    padding-bottom: 35px;
+    text-align: center;
+  }
+}
+
+.main-content {
+  // max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  justify-content: space-between;
+  font-family: $font-en-primary;
+  // color: $heading-color;
+  color: $sub-heading-color;
+
+  .left {
+    width: 50%;
+  }
+
+  .right {
+    width: 100%;
+
+    .description {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 8;
+      /* Number of lines to show */
+      line-clamp: 8;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
+
+ .btn {
+    margin-top: 12px;
+    display: flex;
+    gap: 20px;
+    // justify-content: flex-end;
+
+    button.formal {
+      font-family: $font-en-primary;
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      background-color: $color-secondary;
+      color: #ffffff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 9px;
+      border: 2px solid $color-secondary;
+      transition: all 0.12s linear;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        border: 2px solid $color-secondary;
+        background-color: #fff;
+        color: $color-secondary;
+      }
+    }
+
+    button.see-more {
+      font-family: $font-en-primary;
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      color: $color-primary;
+      background-color: transparent;
+      padding: 10px 40px;
+      border: 2px solid $color-primary;
+      border-radius: 9px;
+      transition: all 0.12s linear;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        border: 2px solid transparent;
+        background-color: $color-primary;
+        color: #fff;
+      }
+    }
+  }
+
+@media (max-width: 992px) {}
+
+@media (max-width: 700px) {
+  .container-title {
+    h2 {
+      font-size: 28px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 646px) {}
+
+@media (max-width: 450px) {
+  .container-title {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 430px) {}
