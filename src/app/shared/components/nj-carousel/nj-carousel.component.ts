@@ -18,7 +18,7 @@ export class NjCarouselComponent {
     
     setInterval(() => {
       // Your logic here
-      this.showSlider('next')
+      // this.showSlider('next')
       
     }, 5000);
   }
