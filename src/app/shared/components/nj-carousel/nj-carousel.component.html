@@ -1,0 +1,44 @@
+<main class="carousel-main">
+    <div class="carousel" [class.hide-list]="isStatic">
+        <div class="list">
+            <ng-container  *ngFor="let banner of banners">
+                <div class="item" >
+                    <img [src]="banner?.webImage" alt="">
+                    <div class="intro">
+                        <div class="title">
+                            {{banner?.title}}
+                        </div>
+                        <div class="topic">
+                            {{banner?.subTitle}}
+                        </div>
+                        <div class="des">
+                            {{banner?.description}}
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            {{banner?.title}}
+                        </div>
+                        <div class="des">
+                            {{banner?.details}}
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+      <!--indicator-area-->
+  <div class="banner-indicator-area">
+    <ul>
+      <li class="prev">
+        <span id="prev" (click)="showSlider('prev')"><i class="fa fa-angle-left"></i></span>
+      </li>
+      <li class="next">
+        <span id="next" (click)="showSlider('next')"><i class="fa fa-angle-right"></i></span>
+      </li>
+    </ul>
+  </div>
+  <div class="background" *ngFor="let banner of banners; let i = index" [class.bg-enabled]="i===count">
+    <img *ngIf="banner?.webBg" [src]="banner?.webBg" alt="bg">
+</div>
+</main>

@@ -23,6 +23,7 @@ import { HomeTeachersComponent } from './home-teachers/home-teachers.component';
 import { OurServicesComponent } from './our-services/our-services.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { TeamMembersComponent } from './team-members/team-members.component';
+import { NjCarouselModule } from 'src/app/shared/components/nj-carousel/nj-carousel.module';
 // import { SingleAdBannerComponent } from './single-ad-banner/single-ad-banner.component';
 
 @NgModule({
@@ -51,6 +52,7 @@ import { TeamMembersComponent } from './team-members/team-members.component';
     MatButtonModule,
     SlickCarouselModule,
     SharedModule,
+    NjCarouselModule
   ],
 })
 export class HomeModule {}

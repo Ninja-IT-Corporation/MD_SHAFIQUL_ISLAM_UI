@@ -26,7 +26,6 @@ import { SharedModule } from './shared/shared.module';
     SlickCarouselModule,
     SharedModule,
     ReactiveFormsModule,
-
     // Angular Firebase Config
     // provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
     // provideAuth(() => getAuth()),
