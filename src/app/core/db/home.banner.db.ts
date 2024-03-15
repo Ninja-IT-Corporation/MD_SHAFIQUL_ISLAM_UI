@@ -52,7 +52,7 @@ export const BANNER: any[] = [
     description: null,
     webBg: './assets/images/carousel/background/bg5.jpg',
     mobileBg: null,
-    webImage: null,
+    webImage: './assets/images/carousel/Image4.png',
     mobileImage: null,
     bannerType: null,
     url: null,
