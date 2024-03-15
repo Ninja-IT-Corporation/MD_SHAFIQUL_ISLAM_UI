@@ -1,0 +1,30 @@
+    <!--responsive navbar-->
+    <header>
+        <nav>
+            <ul class="sidebar" *ngIf="sideShow">
+                <li onclick="hideSidebar()"><a href="#"><i class="ri-close-line"></i></a></li>
+                <li class="navlist"><a href="#">ABOUT</a></li>
+                <li class="navlist"><a href="#">EVENT</a></li>
+                <li class="navlist"><a href="#">NEWS</a></li>
+                <li class="navlist"><a href="#">MEDIA</a></li>
+                <li class="navlist"><a href="#">TIMELINE</a></li>
+                <li class="navlist"><a href="#">CONTACT</a></li>
+                <li class="navlist"><a href="#">GET INVOLVED</a></li>
+            </ul>
+            <ul  [class.hide-nav]="!sideShow">
+                <li class="nav-img"><a href="#">
+                    <img src="./assets/images/ministry-logo.png" alt="">
+                    <img src="./assets/images/al_logo.svg" alt="">
+                    <img src="./assets/images/logo_2nd.svg" alt=""></a>
+                </li>
+                <li class="navlist hideOnMobile"><a href="#">ABOUT</a></li>
+                <li class="navlist hideOnMobile"><a href="#">EVENT</a></li>
+                <li class="navlist hideOnMobile"><a href="#">NEWS</a></li>
+                <li class="navlist hideOnMobile"><a href="#">MEDIA</a></li>
+                <li class="navlist hideOnMobile"><a href="#">TIMELINE</a></li>
+                <li class="navlist hideOnMobile"><a href="#">CONTACT</a></li>
+                <li class="navlist hideOnMobile"><a href="#">GET INVOLVED</a></li>
+                <li class="menu-button" (click)="showSidebar()"><a href="#">sdfdsf<i class="ri-menu-line"></i></a></li>
+            </ul>
+        </nav>
+    </header>

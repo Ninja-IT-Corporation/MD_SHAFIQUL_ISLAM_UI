@@ -11,9 +11,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { OurGalleryComponent } from './our-gallery/our-gallery.component';
 import { GalleryComponent } from './our-gallery/gallery/gallery.component';
 import { RouterModule } from '@angular/router';
+import { NjHeaderModule } from '../shared/components/nj-header/nj-header.module';
 
 @NgModule({
   declarations: [PagesComponent, AboutUsComponent, OurProductsComponent, ContactUsComponent, OurGalleryComponent, GalleryComponent],
-  imports: [CommonModule, PagesRoutingModule, HeaderModule, FooterModule, RouterModule],
+  imports: [CommonModule, PagesRoutingModule, HeaderModule, NjHeaderModule, FooterModule, RouterModule],
 })
 export class PagesModule {}

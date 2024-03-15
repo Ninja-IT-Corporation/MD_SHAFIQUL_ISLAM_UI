@@ -52,7 +52,6 @@
   .header-logo {
     display: block;
     max-width: 55px;
-    background-color: 1px solid red;
     width: 100%;
     margin-bottom: -5px;
 
@@ -65,7 +64,8 @@
 
   .header-toggle {
     display: none;
-    max-width: 80px;
+    // max-width: 80px;
+    width: 100%;
   }
 }
 
@@ -93,9 +93,10 @@
       min-width: 65px;
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      // justify-content: flex-start;
       gap: 12px;
       padding-top: 2px;
+      justify-content: right;
 
       a {
         img {
